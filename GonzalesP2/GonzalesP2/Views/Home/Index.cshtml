@@ -1,0 +1,29 @@
+﻿@using GonzalesP2.Models
+
+@model GonzalesP2.Models.InvestmentCalc
+
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Investment Parameters</h2>
+@{
+    var calc = (InvestmentCalc)ViewData["CalcInfo"];
+}
+
+<form action="/Home/Summary" method="post">
+        <fieldset>
+           
+            <legend> Investment </legend>
+            <div> Principal: </div>
+            <input name="principal" />  
+            <div> Interest: </div>
+            <input name="interest" />  
+            <div> Years: </div>
+            <input name="years" />  
+            <div> Compounds per Year: </div>
+            <input name="compPerYr" />  
+            <div> </div>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GonzalesP2", "GonzalesP2\GonzalesP2.csproj", "{68CEF6BA-F400-4E2F-B21D-8CF826CB7CE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject2", "UnitTestProject2\UnitTestProject2.csproj", "{5F65587A-145D-454D-85BE-F0FAEB58EF53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68CEF6BA-F400-4E2F-B21D-8CF826CB7CE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68CEF6BA-F400-4E2F-B21D-8CF826CB7CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68CEF6BA-F400-4E2F-B21D-8CF826CB7CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68CEF6BA-F400-4E2F-B21D-8CF826CB7CE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F65587A-145D-454D-85BE-F0FAEB58EF53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F65587A-145D-454D-85BE-F0FAEB58EF53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F65587A-145D-454D-85BE-F0FAEB58EF53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F65587A-145D-454D-85BE-F0FAEB58EF53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://cnm.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GonzalesP2\\GonzalesP2.csproj
+		SccProjectName1 = GonzalesP2
+		SccLocalPath1 = GonzalesP2
+		SccProjectUniqueName2 = UnitTestProject2\\UnitTestProject2.csproj
+		SccProjectName2 = UnitTestProject2
+		SccLocalPath2 = UnitTestProject2
+	EndGlobalSection
+EndGlobal

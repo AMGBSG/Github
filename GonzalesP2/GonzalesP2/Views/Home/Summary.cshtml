@@ -1,0 +1,51 @@
+﻿@using GonzalesP2.Models
+
+@model GonzalesP2.Models.InvestmentCalc
+
+@{
+    ViewBag.Title = "Summary";
+}
+
+<h2>Summary</h2>
+@{ 
+    var calc = (InvestmentCalc)ViewData["CalcInfo"];
+}
+<legend> Investment Calculator </legend>
+    <div class="editor-label">
+    @Html.LabelFor(model => model.Principal)
+    </div>
+    <div>
+    @Html.Display("Principal")<span style="color:crimson"> @Html.ValidationMessageFor(m => m.Principal)</span>
+    </div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Years)
+</div>
+<div>
+    @Html.Display("Years") <span style="color:crimson"> @Html.ValidationMessageFor(m => m.Years)</span>
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Interest)
+</div>
+<div>
+    @Html.Display("Interest") <span style="color:crimson"> @Html.ValidationMessageFor(m => m.Interest)</span>
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.CompPerYr)
+</div>
+<div>
+    @Html.Display("CompPerYr")<span style="color:crimson"> @Html.ValidationMessageFor(m => m.CompPerYr)</span>
+</div>
+
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.FutureValue)
+</div>
+<div>
+    @Html.Display("FutureValue")<span style="color:crimson"> @Html.ValidationMessageFor(m => m.FutureValue)</span>
+</div>
+<div>
+    @Html.ActionLink("Calculate a new investment", "Index", "Home")
+</div>

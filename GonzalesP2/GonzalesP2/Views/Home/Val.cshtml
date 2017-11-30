@@ -1,0 +1,57 @@
+﻿
+@using GonzalesP2.Models
+
+@model GonzalesP2.Models.InvestmentCalc
+
+@using (Html.BeginForm("Summary", "Home", "post"))
+{
+    @Html.ValidationSummary(true)
+    <legend> Investment </legend>
+    <p style="font-size:large; color:red">
+         @ViewBag.Info 
+    </p>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Principal)
+    </div>
+    <div>
+        @Html.EditorFor(model => model.Principal)<span style="color:crimson">@Html.ValidationMessageFor(x => x.Principal)</span>
+    </div>
+
+
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Interest)
+    </div>
+    <div>
+        @Html.EditorFor(model => model.Interest)<span style="color:crimson">@Html.ValidationMessageFor(x => x.Interest)</span>
+    </div>
+
+
+
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Years)
+    </div>
+
+    <div>
+        @Html.EditorFor(model => model.Years)<span style="color:crimson">@Html.ValidationMessageFor(x => x.Years)</span>
+    </div>
+
+
+
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.CompPerYr)
+    </div>
+    <div>
+        @Html.EditorFor(model => model.CompPerYr)<span style="color:crimson">@Html.ValidationMessageFor(x => x.CompPerYr)</span>
+    </div>
+
+
+
+
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+}
